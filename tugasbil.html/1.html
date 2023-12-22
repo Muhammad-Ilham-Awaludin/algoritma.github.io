@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //nomor 1
+        let bil1 = 300;
+        let bil2 = 400;
+        let bil3 = 100;
+
+        if (bil1 > bil2 && bil1 > bil3) {
+            console.log(bil1)
+        } else if (bil2 > bil1 && bil2 > bil3) {
+            console.log(bil2)
+        } else if (bil3 > bil1 && bil3 > bil2) {
+            console.log(bil3)
+        } else if (bil1 == bil2 && bil1 == bil3) {
+            console.log("semua bilangan sama")
+        }
+
+        //nomor 2
+        let angka = prompt("masukkan angka selain 0")
+
+        if (angka % 2 == 0 && angka > 0) {
+            console.log("positif genap");
+        } else if (angka % 2 == 0 && angka < 0) {
+            console.log("negatif genap");
+        } else if (angka % 2 == 1 && angka > 0) {
+            console.log("positif ganjil");
+        } else if (angka % 2 == -1 && angka < 0) {
+            console.log("negatif ganjil");
+        }
+
+        // let angka = prompt("masukkan angka selain 0")
+
+        // if(angka > 0) {
+        //     console.log("positif")
+        // } else{
+        //     console.log("negatif")
+        // }
+        // if(angka % 2 == 0){
+        //     console.log("genap")
+        // } else{
+        //     console.log("ganjil")
+        // }
+
+        //nomor 3
+        let saklar = 10;
+        if (saklar == 1) {
+            console.log("ON")
+        } else if (saklar = 0) {
+            console.log("OFF")
+        } else {
+            console.log("masukan angka 1 atau 0")
+        }
+
+        //nomor 4
+        let sultan = 20000;
+        let puput = 50000;
+        let abyan = 50000;
+        let total = sultan + puput + abyan;
+
+        diskon = 10 / 100 * total;
+        if (total > 100000) {
+            console.log(total - diskon)
+        }
+        else if (total < 100000) {
+            console.log(total)
+        }
+
+        //nomor 5
+        let JL = 1000;
+
+        if (JL < 6) {
+            console.log("GL Rp. 100.000")
+        }
+        else if (JL == 6) {
+            console.log("GL Rp. 200.000")
+        }
+        else if (JL > 6) {
+            console.log("GL Rp. 300.000")
+        }
+
+        //nomor 6
+        let PA = 700;
+
+        if (PA <= 500.0) {
+            console.log("AMAN")
+        }
+        else if (PA >= 500.1 && PA <= 600.0) {
+            console.log("WASPADA")
+        }
+        else if (PA >= 600.1 && PA <= 650.0) {
+            console.log("SIAGA 2")
+        }
+        else {
+            console.log("SIAGA 1")
+        }
+
+        //soal while genap
+        let z = 0
+        while (z <= 10) {
+            console.log("data z ke -", z)
+            z += 2
+        }
+
+        //soal while ganjil
+        let a = 1
+        while (a <= 27) {
+            console.log("data a ke -", a)
+            a += 2
+        }
+
+        //soal angka faktorial
+        function hitungfaktorial(n) {
+            let hasilfaktorial = 1;
+
+            for (let i = 1; i <= n; i++) {
+                hasilfaktorial *= i;
+            }
+            return hasilfaktorial;
+        }
+
+        //contoh penggunaan
+        const n = prompt(`masukkan nilai faktorial`);
+        const hasilfaktorial = hitungfaktorial(n);
+
+        console.log(`faktorial dari ${n} adalah : ${hasilfaktorial}`);
+
+    </script>
+</body>
+
+</html>
